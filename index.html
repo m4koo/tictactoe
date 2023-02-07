@@ -9,6 +9,62 @@
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <div class="player-panel">
+        <span id="player-1">
+            <img src="img/circle.png">Player 1
+        </span>
+        <span id="player-2" class="player-inactive">
+            <img src="img/cross.png">Player 2
+        </span>
+    </div>
+
+    <div class="horizontal-line" style="top: 300px"></div>
+    <div class="horizontal-line" style="top: 435px"></div>
+    <div class="horizontal-line" style="top: 570px"></div>
+
+    <table>
+        <tr>
+            <td onclick="fillShape(0)">
+                <img id="circle-0" class="hidden" src="img/circle.png">
+                <img id="cross-0" class="hidden" src="img/cross.png">
+            </td>
+            <td onclick="fillShape(1)">
+                <img id="circle-1" class="hidden" src="img/circle.png">
+                <img id="cross-1" class="hidden" src="img/cross.png">
+            </td>
+            <td onclick="fillShape(2)">
+                <img id="circle-2" class="hidden" src="img/circle.png">
+                <img id="cross-2" class="hidden" src="img/cross.png">
+            </td>
+        </tr>
+        <tr>
+            <td onclick="fillShape(3)">
+                <img id="circle-3" class="hidden" src="img/circle.png">
+                <img id="cross-3" class="hidden" src="img/cross.png">
+            </td>
+            <td onclick="fillShape(4)">
+                <img id="circle-4" class="hidden" src="img/circle.png">
+                <img id="cross-4" class="hidden" src="img/cross.png">
+            </td>
+            <td onclick="fillShape(5)">
+                <img id="circle-5" class="hidden" src="img/circle.png">
+                <img id="cross-5" class="hidden" src="img/cross.png">
+            </td>
+        </tr>
+        <tr>
+            <td onclick="fillShape(6)">
+                <img id="circle-6" class="hidden" src="img/circle.png">
+                <img id="cross-6" class="hidden" src="img/cross.png">
+            </td>
+            <td onclick="fillShape(7)">
+                <img id="circle-7" class="hidden" src="img/circle.png">
+                <img id="cross-7" class="hidden" src="img/cross.png">
+            </td>
+            <td onclick="fillShape(8)">
+                <img id="circle-8" class="hidden" src="img/circle.png">
+                <img id="cross-8" class="hidden" src="img/cross.png">
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
