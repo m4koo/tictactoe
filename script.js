@@ -1,8 +1,9 @@
 let fields = [];
-let currentShape = 'cross';
+let currentShape = 'circle';
 
 function fillShape(id){
     if (!fields[id]) {        
+        fields[id] = currentShape;
         if (currentShape == 'cross') {
             currentShape = 'circle';
             document.getElementById('player-1').classList.remove('player-inactive')
@@ -12,7 +13,6 @@ function fillShape(id){
             document.getElementById('player-1').classList.add('player-inactive')
             document.getElementById('player-2').classList.remove('player-inactive')
         }
-        fields[id] = currentShape;
         console.log(fields);
         draw();
         checkForWin();
