@@ -90,4 +90,10 @@ td>img {
     width: 50vw;
     max-width: 399px;
     position: absolute;
+    transform: scaleX(0.0);
+    transition: transform 225ms ease-in-out;
+}
+
+.make-vertical{
+    transform: rotate(90deg) scaleX(0.0);
 }
