@@ -84,5 +84,25 @@ function checkForWin() {
     if (winner) {
         console.log('Gewonnen', winner)
         gameOver = true;
+        setTimeout(() => {
+            document.getElementById('game-over').classList.remove('hidden');
+            document.getElementById('restart-btn').classList.remove('hidden');
+        }, 1000);
     }
+}
+
+function restart() {
+    gameOver = false;
+    document.getElementById('game-over').classList.add('hidden');
+    document.getElementById('restart-btn').classList.add('hidden');
+
+    for (let i = 0; i <= 8; i++) {
+        document.getElementById(`circle-${i}`).classList.add('hidden');
+        document.getElementById(`cross-${i}`).classList.add('hidden');
+
+        if (i > 0) {
+            document.getElementById(`line-${i}`).style.transform = 'scaleX(0)';    
+        }
+    }
+    fields = [];
 }
